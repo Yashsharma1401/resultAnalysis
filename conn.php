@@ -1,0 +1,15 @@
+<?php
+// Replace these values with your actual database credentials
+$host = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'manstud';
+
+// Create a database connection
+$conn = mysqli_connect($host, $username, $password, $database);
+
+// Check if the connection was successful
+if (!$conn) {
+    die("Database connection failed: " . mysqli_connect_error());
+}
+?>
